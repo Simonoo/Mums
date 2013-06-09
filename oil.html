@@ -92,7 +92,7 @@
 				<ul>
 
 					<li><a href=".\index.html">Home</a></li>
-					<li class="selected"> <a href=".\oil.html">Oil</a></li>
+					<li class="selected"> <a href=".\oil.html">Oil paintings</a></li>
 					<li><a href=".\encaustic.html">Encaustic</a></li>
 					<li><a href=".\watercolours.html">Watercolours</a></li>
 					<li><a href=".\mixedmedia.html">Mixed media</a></li>
@@ -132,7 +132,7 @@
 
 			<div class="sixteen columns">
 
-					<div class="galleria">
+					<div id="galleria">
 
 						<img src="images/oil/1/oil1.jpg">
 						<img src="images/oil/1/oil2.jpg">
@@ -145,47 +145,6 @@
 
 					</div>
 
-					<p> Introduction to gallery 2 </p>
-
-					<div class="galleria">
-
-						<img src="images/oil/2/oil2_1.jpg">
-						<img src="images/oil/2/oil2_2.jpg">
-						<img src="images/oil/2/oil2_3.jpg">
-						<img src="images/oil/2/oil2_4.jpg">
-						<img src="images/oil/2/oil2_5.jpg">
-						<img src="images/oil/2/oil2_6.jpg">
-						<img src="images/oil/2/oil2_7.jpg">
-
-					</div>
-					
-					<p> Introduction to gallery 3 </p>
-
-					<div class="galleria">
-
-						<img src="images/oil/3/oil3_1.jpg">
-						<img src="images/oil/3/oil3_2.jpg">
-						<img src="images/oil/3/oil3_3.jpg">
-						<img src="images/oil/3/oil3_4.jpg">
-						<img src="images/oil/3/oil3_5.jpg">
-						<img src="images/oil/3/oil3_6.jpg">
-						<img src="images/oil/3/oil3_7.jpg">
-
-					</div>
-					
-					<p> Introduction to gallery 4 </p>
-
-					<div class="galleria">
-
-						<img src="images/oil/4/oil4_1.jpg">
-						<img src="images/oil/4/oil4_2.jpg">
-						<img src="images/oil/4/oil4_3.jpg">
-						<img src="images/oil/4/oil4_4.jpg">
-						<img src="images/oil/4/oil4_5.jpg">
-						<img src="images/oil/4/oil4_6.jpg">
-
-					</div>
-
 			</div>
 
 		</div> <!--end container -->
@@ -195,7 +154,7 @@
 	<script>
 
 			Galleria.loadTheme('galleria/themes/twelve/galleria.twelve.min.js'); 
-			Galleria.run('.galleria',  {fullscreenCrop: false});
+			Galleria.run('#galleria', {fullscreenCrop: false});
 			
 	</script>
 
