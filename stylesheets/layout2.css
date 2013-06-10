@@ -18,13 +18,13 @@
 /* #Typography baseline corrections
 ================================================== */
 
-	h1 { line-height: 49px; margin-bottom: 14px;}
+	h1 { line-height: 49px; margin-bottom: 14px; }
 	h2 { line-height: 42px; margin-bottom: 10px; }
 	h3 { line-height: 35px; margin-bottom: 7px; }
 	h4 { line-height: 28px; margin-bottom: 7px; }
 	h5 { line-height: 21px; }
 
-	p { margin: 0px 0px 21px 10px; }
+	p { margin: 0 0 14px 0; }
 	p.lead { line-height: 28px; }
 
 /*	Blockquotes  */
@@ -50,12 +50,8 @@
 /* #Site Styles
 ================================================== */
 
-.galleria{ width: auto; height: 700px; background: #000; margin: 0px 20px 21px 10px}
-.galleria p {
-		margin: 0px 20px 0px 7px;
-}
+.galleria, .oil { width: auto; height: 700px; background: #000; margin: 0px 20px 21px 10px}
 .galleria-bar { background: #000000; }
-
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -76,8 +72,8 @@
 }
 
 .band.content {
-	margin: 14px 0px 14px 0px;
-	padding: 14px 0px 0px 0px;
+	margin: 7px 0px 7px 0px;
+	padding: 7px 0px 0px 0px;
 }
 
 .band.footer {
@@ -180,7 +176,7 @@ nav.primary ul ul li a {
 /* #Media Queries
 ================================================== */
 
-		/* Smaller than standard 960 (devices and browsers) */
+	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
 	
 			.galleria{ height: 700px;}
@@ -220,7 +216,6 @@ nav.primary ul ul li a {
 		.galleria{ height: 200px;}
 	}
 	
-
 
 /* #Font-Face
 ================================================== */
