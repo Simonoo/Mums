@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="galleria/galleria-1.2.9.min.js"></script>
+	
+	<!-- Chris Coyier's little drop down select -->
+	<script type="text/javascript">
+		$( document ).ready(function() {
+	
+			// build drop down
+			$( "<select />").appendTo ( ".navigation nav div");
+	
+			// create default option "Go to..."
+			$( "<option />", {
+				"selected" : "selected",
+				"value" : "",
+				"text" : "Go to..."
+			}).appendTo("nav select");
+			
+			// populate dropdown woth the menu list items
+			$(".navigation nav li a").each(function() {
+				var el = $(this);
+				var pre = el.parents(".navigation nav ul").length > 1 ? "- " : "";
+				$("<option />", {
+					"value" : el.attr("href"),
+					"text"  : pre + el.text()
+				}).appendTo("nav select");
+			});
+		});
+		
+	</script>
+	
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Barbara Larkin</title>
+	<meta name="Barbara Larkin art llandudno north wales west shore artist" content="">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+
+<body>
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class ="band header">
+
+		<div class="container">
+
+			<div class="sixteen columns">
+
+				<h1 style="margin: 35px 0px 0px 10px ">Barbara Larkin</h1>
+
+			</div>
+
+		</div> <!--end container -->
+
+	</div> <!--end band -->
+
+	<div class ="band navigation">
+
+		<nav class="container primary">
+
+			<div class="sixteen columns">
+
+				<ul>
+
+					<li> <a href=".\index.html">Home</a> </li>
+					<li> <a href=".\oil.html">Oil paintings</a> </li>
+					<li> <a href=".\encaustic.html">Encaustic</a> </li>
+					<li> <a href=".\watercolours.html">Watercolours</a> </li>
+					<li class="selected"><a href=".\mixedmedia.html">Mixed media</a> </li>
+					<li> <a href=".\photography.html">Photography</a> </li>
+
+				</ul>
+
+			</div>
+	
+		</nav> <!--end container -->
+
+	</div>
+	
+	</nav> <!--end band -->
+
+	<div class ="band content">
+
+		<div class="container">
+
+			<div class="sixteen columns">
+
+				<div class="two-third column">
+				
+				<p>Watercolours introduction copy.</p>
+			
+				</div>
+
+			</div>
+
+		</div> <!--end container -->	
+
+	</div> <!--end band -->
+
+	<div class ="band gallery">
+
+		<div class="container">
+
+			<div class="sixteen columns">
+
+					<div class="galleria">
+
+						<img src="images/mixedmedia/mm1.jpg">
+						<img src="images/mixedmedia/mm2.jpg">
+						<img src="images/mixedmedia/mm3.jpg">
+						<img src="images/mixedmedia/mm4.jpg">
+						<img src="images/mixedmedia/mm5.jpg">
+						<img src="images/mixedmedia/mm6.jpg">
+						<img src="images/mixedmedia/mm7.jpg">
+						
+					</div>
+
+			</div>
+
+		</div> <!--end container -->
+
+	</div> <!--end band -->
+
+	<script>
+
+			Galleria.loadTheme('galleria/themes/twelve/galleria.twelve.min.js'); 
+			Galleria.run('.galleria', {fullscreenCrop: false});
+			
+	</script>
+
+	<div class ="band footer">
+
+		<div class="container">
+
+				<div class="sixteen columns">
+
+				</div>
+
+		</div> <!--end container -->
+
+	</div> <!--end band -->
+	
+	<div class ="band bottom">
+
+		<div class="container">
+
+				<div class="sixteen columns">
+
+				</div>
+
+		</div> <!--end container -->
+	
+	</div> <!--end band -->
+
+
+<!-- End Document
+================================================== -->
+
+</body>
+
+</html>
