@@ -31,7 +31,12 @@
 					"text"  : pre + el.text()
 				}).appendTo("nav select");
 			});
+		
+		$("nav select").change(function() {
+		window.location = $(this).find("option:selected").val();
+		
 		});
+	});
 		
 	</script>
 	
