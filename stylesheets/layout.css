@@ -24,9 +24,9 @@
 	h4 { line-height: 28px; margin-bottom: 7px; }
 	h5 { line-height: 21px; }
 
-	p { margin: 0px 0px 21px 10px; }
-	p.lead { line-height: 28px; }
-
+	p { margin: 0px 0px 21px 50px; }
+	p.body { margin: 0px 200px 14px 50px; }
+		
 /*	Blockquotes  */
 	blockquote, blockquote p { line-height: 21px; }
 	blockquote { margin: 0 0 21px; padding: 7px 20px 0 19px; }
@@ -50,10 +50,11 @@
 /* #Site Styles
 ================================================== */
 
-.galleria{ width: auto; height: 700px; background: #000; margin: 0px 20px 21px 10px}
-.galleria p {
-		margin: 0px 20px 0px 7px;
+.galleria{ 
+	width: auto; height: 500px; background: #000; 
+	margin: 0px 200px 21px 50px; 
 }
+
 .galleria-bar { background: #000000; }
 
 
@@ -62,6 +63,10 @@
 /*Bands*/
 .band {
 	background: #ffffff;
+}
+
+.band.introhome {
+	margin: 0px 200px 160px 0px;
 }
 
 .band.header {
