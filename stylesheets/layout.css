@@ -24,8 +24,8 @@
 	h4 { line-height: 28px; margin-bottom: 7px; }
 	h5 { line-height: 21px; }
 
-	p { margin: 0px 0px 21px 50px; }
-	p.body { margin: 0px 200px 14px 50px; }
+	p { margin: 0px 0px 21px 25px; }
+	p.body { margin: 7px 200px 21px 50px; }
 		
 /*	Blockquotes  */
 	blockquote, blockquote p { line-height: 21px; }
@@ -42,7 +42,11 @@
 	ol ol li, ol ul li { margin-bottom: 7px; }
 	li { line-height: 21px; margin-bottom: 14px; }
 	li.selected {background:#00618c; }
-	
+	li.contact a{
+		font-color: #002c53;
+		background-image:url('../images/mailicon2.png');
+		background-repeat:no-repeat;
+	}
 	ul.large li { line-height: 21px; }
 	li p { line-height: 21px; }
 
@@ -63,10 +67,6 @@
 /*Bands*/
 .band {
 	background: #ffffff;
-}
-
-.band.introhome {
-	margin: 0px 200px 160px 0px;
 }
 
 .band.header {
@@ -195,8 +195,13 @@ nav.primary ul ul li a {
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 
-		.galleria{ height: 500px;}
 		nav.primary ul li a {font-size: 90%;}
+		p.body { margin: 0px 40px 14px 25px; }
+		
+		.galleria {
+		width: auto; height: 500px; background: #000; 
+		margin: 0px 50px 21px 25px; 
+		}
 
 	}
 
@@ -211,7 +216,12 @@ nav.primary ul ul li a {
 		nav.primary ul {
 			display: none;}
 
-		.galleria{ height: 300px;}
+		p.body { margin: 0px 10px 14px 20px; }
+		.galleria {
+		width: auto; height:350px; background: #000; 
+		margin: 0px 20px 21px 20px; 
+		}
+
 	
 
 	}
@@ -222,7 +232,7 @@ nav.primary ul ul li a {
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 	
-		.galleria{ height: 200px;}
+		.galleria{ height: 250px;}
 	}
 	
 
