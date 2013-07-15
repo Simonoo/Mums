@@ -25,8 +25,9 @@
 	h5 { line-height: 21px; }
 
 	p { margin: 0px 0px 21px 25px; }
-	p.body { margin: 7px 200px 21px 50px; }
-		
+	p.body { margin: 7px 100px 21px 50px; }
+	p.email { margin: 40px 0px 0px 305px; }
+	
 /*	Blockquotes  */
 	blockquote, blockquote p { line-height: 21px; }
 	blockquote { margin: 0 0 21px; padding: 7px 20px 0 19px; }
@@ -41,24 +42,20 @@
 	ul ul li, ul ol li,
 	ol ol li, ol ul li { margin-bottom: 7px; }
 	li { line-height: 21px; margin-bottom: 14px; }
-	li.selected {background:#00618c; }
-	li.contact a{
-		font-color: #002c53;
-		background-image:url('../images/mailicon2.png');
-		background-repeat:no-repeat;
-	}
+	li.selected { background:#00618c; }
 	ul.large li { line-height: 21px; }
 	li p { line-height: 21px; }
 
 
 /* #Site Styles
 ================================================== */
+/* .email { margin: 50px 0px 0px 372px; } */
 
 .galleria{ 
-	width: auto; height: 500px; background: #000; 
-	margin: 0px 200px 21px 50px; 
+	width: auto; height: 500px; background: whitebar c; 
+	margin: 0px 200px 21px 130px; 
 }
-
+body .galleria-images{ background: #F8F8FF }
 .galleria-bar { background: #000000; }
 
 
@@ -195,7 +192,7 @@ nav.primary ul ul li a {
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 
-		nav.primary ul li a {font-size: 90%;}
+		nav.primary ul li a {font-size: 85%;}
 		p.body { margin: 0px 40px 14px 25px; }
 		
 		.galleria {
@@ -208,7 +205,8 @@ nav.primary ul ul li a {
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 	
-		h1 {text-align:center;}
+		h1 {text-align:center; margin: 5px 0px 0px 0px;}
+		
 		nav.primary select {
 			display: block;
 		}
@@ -222,8 +220,6 @@ nav.primary ul ul li a {
 		margin: 0px 20px 21px 20px; 
 		}
 
-	
-
 	}
 	
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -231,8 +227,9 @@ nav.primary ul ul li a {
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-	
+		h1 {text-align:center; margin: 5px 0px 0px 0px;}
 		.galleria{ height: 250px;}
+	
 	}
 	
 
