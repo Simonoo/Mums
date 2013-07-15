@@ -6,6 +6,7 @@
 <head>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="galleria/galleria-1.2.9.min.js"></script>
 	
 	<!-- Chris Coyier's little drop down select -->
 	<script type="text/javascript">
@@ -85,13 +86,13 @@
 		<nav class="container primary">
 			<div class="sixteen columns">
 				<ul>
-					<li> <a href="index.html">Home</a></li>
-					<li><a href="oil.html">Oil paintings</a></li>
+					<li><a class="home" href="index.html">Home</a></li>
+					<li><a href="oil.html">Oil</a></li>
 					<li><a href="encaustic.html">Encaustic</a></li>
 					<li><a href="watercolours.html">Watercolours</a></li>
 					<li><a href="mixedmedia.html">Mixed media</a></li>
-					<li class="selected"><a href="photography.html">Photography</a></li>
-					<li><a href="mailto:jenivore@hotmail.co.uk?Subject=Barbara%20Larkin's%20art" target="_top">Contact</a>
+					<li><a class="selected" href="photography.html">Photography</a></li>
+					<li><a class="email" href="mailto:jenivore@hotmail.co.uk?Subject=Barbara%20Larkin's%20art" target="_top">Contact</a>
 				</ul>
 			</div>
 		</nav> <!--end container -->
@@ -106,6 +107,31 @@
 			</div>
 		</div> <!--end container -->	
 	</div> <!--end band -->
+
+	<div class ="band gallery">
+		<div class="container">
+			<div class="sixteen columns">
+					<div class="galleria">
+						<img src="images/photography/1/photo1_1.jpg">
+						<img src="images/photography/1/photo1_2.jpg">
+						<img src="images/photography/1/photo1_3.jpg">
+						<img src="images/photography/1/photo1_4.jpg">
+						<img src="images/photography/1/photo1_5.jpg">
+						<img src="images/photography/1/photo1_6.jpg">
+						<img src="images/photography/1/photo1_7.jpg">
+						<img src="images/photography/1/photo1_8.jpg">
+						<img src="images/photography/1/photo1_9.jpg">
+
+					</div>
+			</div>
+		</div> <!--end container -->
+	</div> <!--end band -->
+
+	<script>
+			Galleria.loadTheme('galleria/themes/twelve/galleria.twelve.min.js'); 
+			Galleria.run('.galleria', {imageCrop: false, fullscreenCrop: false});
+	</script>
+
 
 	<div class ="band footer">
 		<div class="container">

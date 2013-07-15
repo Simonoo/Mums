@@ -42,7 +42,19 @@
 	ul ul li, ul ol li,
 	ol ol li, ol ul li { margin-bottom: 7px; }
 	li { line-height: 21px; margin-bottom: 14px; }
-	li.selected { background:#00618c; }
+	
+	a.selected { background:#00618c; }
+	a.home {
+		width: 30px !important;
+		text-indent: -2000px; 
+		background: #002c53 url(../images/home4.png) no-repeat 50% 8px !important;
+		}
+	a.email {
+		width: 60px !important;
+		text-indent: -2000px; 
+		background: #002c53 url(../images/email_icon2.png) no-repeat 50% 8px !important;
+		}	
+		
 	ul.large li { line-height: 21px; }
 	li p { line-height: 21px; }
 
@@ -53,7 +65,7 @@
 
 .galleria{ 
 	width: auto; height: 500px; background: whitebar c; 
-	margin: 0px 200px 21px 130px; 
+	margin: 0px 200px 21px 120px; 
 }
 body .galleria-images{ background: #F8F8FF }
 .galleria-bar { background: #000000; }
