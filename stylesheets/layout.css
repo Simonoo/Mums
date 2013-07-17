@@ -59,7 +59,7 @@
 		background: #002c53 url(../images/home4.png) no-repeat 50% 10px !important;
 		}
 	a.contact {
-		margin: 0px 0px 0px 700px; 
+		margin: 0px 0px 0px 0px; 
 		color: #ffffff; 
 		}	
 
@@ -77,6 +77,7 @@
 	}
 	
 	html,body{ height: 100% }
+
 
 /* #Site Styles
 ================================================== */
@@ -100,7 +101,7 @@ footer{
 
 .galleria{ 
 	width: auto; height: 500px; background: whitebar c; 
-	margin: 0px 200px 21px 120px; 
+	margin: 0px 160px 21px 80px; 
 }
 /* body .galleria-images{ background: #F8F8FF } */
 	body .galleria-images{ background: #E0EEEE } 
@@ -141,13 +142,13 @@ footer{
 	
 }
 .band.footer {
-	margin: 35px 0px 0px 0px;
+	margin: 70px 0px 0px 0px;
 	padding: 4px 0px 0px 0px;
 	background: #13a69c;
 
 }
 .band.bottom {
-	margin: 0px 0px 00px 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 7px 0px 7px 0px;
 	background: #002c53;
 
@@ -160,6 +161,9 @@ footer{
 	color: white;
 }
 
+.mobileonly {
+	display: none; !important
+}
 
 /* #Navigation
 ================================================== */
@@ -184,7 +188,7 @@ nav.primary ul li {
 nav.primary ul li a {
 	display: inline-block;
 	line-height: 40px;
-	padding: 0 14px;
+	padding: 0 20px;
 	color: #ffffff;
 	text-align: center;
 	text-transform: uppercase;
@@ -237,6 +241,37 @@ nav.primary ul ul li a {
 /* #Page Styles
 ================================================== */
 
+#backtotop2 {
+	cursor : pointer;
+	display : none;
+	margin : 0px 0px 0px 380px;
+	position : fixed;
+	left: -2000px; 
+	bottom : 2px;
+	font-size : 90%;
+	padding	: 10px;
+	width : 100px;
+	text-align : center;
+	background-color : #000;
+	border-radius : 8px;
+	-webkit-border-radius : 8px;
+	-moz-border-radius : 8px;
+	filter : alpha(opacity=60);
+	-khtml-opacity : 0.6;
+	-moz-opacity : 0.6;
+	opacity	: 0.6;
+	color : #FFF;
+	font-size : 14px;
+	z-index	: 1000;
+}
+#backtotop2:hover
+{
+	filter : alpha(opacity=90);
+	-khtml-opacity : 0.9;
+	-moz-opacity : 0.9;
+	opacity	: 0.9;
+}
+
 /* #Media Queries
 ================================================== */
 
@@ -287,7 +322,12 @@ nav.primary ul ul li a {
 		margin: 0px 0px 0px 340px; 
 		color: #ffffff; 
 		}
-
+		
+		#backtotop {
+			left: 0px; 
+			margin : 0px 0px 0px 320px;
+			
+		}
 	}
 	
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

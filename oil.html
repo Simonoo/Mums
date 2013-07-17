@@ -40,6 +40,26 @@
 		
 	</script>
 	
+	<!-- Blue Bot back to top script  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		$(function() {
+			$(window).scroll(function() {
+				if($(this).scrollTop() != 0) {
+					$('#backtotop').fadeIn();
+				} else {
+					$('#backtotop').fadeOut();
+				}
+			});
+		
+			$('#backtotop').click(function() {
+				$('body,html').animate({scrollTop:0},800);
+			});
+		});
+	</script>
+	
+	
+	
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
@@ -165,7 +185,7 @@
 							<img src="images/oil/3/oil3_7.jpg">
 						</div>
 						
-						<p class="body"> Introduction to gallery.</p>
+				"/Users/simon/Downloads/dhg-Skeleton-7ab6820/dhg-Skeleton-7ab6820/index.html"		<p class="body"> Introduction to gallery.</p>
 	
 						<div class="galleria">
 							<img src="images/oil/4/oil4_1.jpg">
@@ -195,11 +215,18 @@
 		</div> <!--end band -->
 		<div class ="band bottom">
 			<div class="container">
-					<div class="sixteen columns">
+					<div class="one-third column"> 
+						<div id ="backtotop">Back to top</div>
+					</div>
+					<div class="one-third column">
 						<a class="contact" href="mailto:jenivore@hotmail.co.uk?Subject=Barbara%20Larkin's%20art" target="_top">Contact</a>
 					</div>
+
+						
 			</div> <!--end container -->
 		</div> <!--end band -->
+
+
 	</footer>
 
 </div> <!--  end of holder -->
