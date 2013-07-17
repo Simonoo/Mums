@@ -59,8 +59,9 @@
 		background: #002c53 url(../images/home4.png) no-repeat 50% 10px !important;
 		}
 	a.contact {
-		margin: 0px 0px 0px 0px; 
+		margin: 0px 0px 0px 410px; 
 		color: #ffffff; 
+		text-decoration: none;
 		}	
 
 	ul.large li { line-height: 21px; }
@@ -82,9 +83,9 @@
 /* #Site Styles
 ================================================== */
 
-#holder{
+#holder{ /* Used to hold all content and fix bottom bads to bottom */
 	min-height: 100%;
-	position:relative;
+	position: relative;
 }
 
 #body{
@@ -103,8 +104,8 @@ footer{
 	width: auto; height: 500px; background: whitebar c; 
 	margin: 0px 160px 21px 80px; 
 }
-/* body .galleria-images{ background: #F8F8FF } */
-	body .galleria-images{ background: #E0EEEE } 
+
+body .galleria-images{ background: #E0EEEE } 
 
 .galleria-bar { background: #000000; }
 
@@ -118,7 +119,6 @@ footer{
 
 .band.header {
 	background: #ffffff;
-
 }
 
 .band.navigation {
@@ -130,7 +130,6 @@ footer{
 
 .band.content {
 	margin: 14px 0px 14px 0px;
-	padding: 14px 0px 0px 0px;
 
 }
 
@@ -241,35 +240,10 @@ nav.primary ul ul li a {
 /* #Page Styles
 ================================================== */
 
-#backtotop2 {
+#backtotop {
 	cursor : pointer;
-	display : none;
-	margin : 0px 0px 0px 380px;
-	position : fixed;
-	left: -2000px; 
-	bottom : 2px;
-	font-size : 90%;
-	padding	: 10px;
-	width : 100px;
-	text-align : center;
-	background-color : #000;
-	border-radius : 8px;
-	-webkit-border-radius : 8px;
-	-moz-border-radius : 8px;
-	filter : alpha(opacity=60);
-	-khtml-opacity : 0.6;
-	-moz-opacity : 0.6;
-	opacity	: 0.6;
-	color : #FFF;
-	font-size : 14px;
-	z-index	: 1000;
-}
-#backtotop2:hover
-{
-	filter : alpha(opacity=90);
-	-khtml-opacity : 0.9;
-	-moz-opacity : 0.9;
-	opacity	: 0.9;
+	color : #ffffff;
+	margin: 0px 0px 0px 80px; 
 }
 
 /* #Media Queries
@@ -294,10 +268,13 @@ nav.primary ul ul li a {
 		}
 
 		a.contact {
-		margin: 0px 0px 0px 600px; 
+		margin: 0px 0px 0px 390px; 
 		color: #ffffff; 
 		}
-
+		
+		#backtotop {
+		margin : 0px 0px 0px 25px;
+		}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -319,14 +296,12 @@ nav.primary ul ul li a {
 		}
 
 		a.contact {
-		margin: 0px 0px 0px 340px; 
+		margin: 0px 0px 0px 20px; 
 		color: #ffffff; 
 		}
 		
 		#backtotop {
-			left: 0px; 
-			margin : 0px 0px 0px 320px;
-			
+			margin : 0px 0px 0px 20px;
 		}
 	}
 	
@@ -339,8 +314,12 @@ nav.primary ul ul li a {
 		.galleria{ height: 250px;}
 	
 		a.contact {
-		margin: 0px 0px 0px 200px; 
+		margin: 0px 0px 0px 20px; 
 		color: #ffffff; 
+		}
+		
+		#backtotop {
+		margin : 0px 0px 0px 20px;
 		}
 	}
 	
